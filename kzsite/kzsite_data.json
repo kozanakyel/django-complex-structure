@@ -1,0 +1,780 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2023-08-28T09:34:15.580Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Quantum Computing in Finance",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2023-08-28T09:41:03.031Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Quantum Computing in Finance",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2023-08-28T09:50:14.091Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Quantum Computing in Finance",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2023-08-28T10:59:36.262Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Quantum Computing in Finance",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2023-08-28T14:27:53.596Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "The Rust Programming Language",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2023-08-28T14:28:23.361Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Installing rustup on Windows",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2023-08-28T14:28:45.401Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Updating and Uninstalling",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2023-08-29T13:14:27.170Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "The Rust Programming Language",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2023-08-29T16:33:21.144Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Installing rustup on Windows",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add post",
+    "content_type": 7,
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change post",
+    "content_type": 7,
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": 7,
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view post",
+    "content_type": 7,
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add comment",
+    "content_type": 8,
+    "codename": "add_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change comment",
+    "content_type": 8,
+    "codename": "change_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete comment",
+    "content_type": 8,
+    "codename": "delete_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view comment",
+    "content_type": 8,
+    "codename": "view_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add tag",
+    "content_type": 9,
+    "codename": "add_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change tag",
+    "content_type": 9,
+    "codename": "change_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete tag",
+    "content_type": 9,
+    "codename": "delete_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view tag",
+    "content_type": 9,
+    "codename": "view_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add tagged item",
+    "content_type": 10,
+    "codename": "add_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change tagged item",
+    "content_type": 10,
+    "codename": "change_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete tagged item",
+    "content_type": 10,
+    "codename": "delete_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view tagged item",
+    "content_type": 10,
+    "codename": "view_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add site",
+    "content_type": 11,
+    "codename": "add_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change site",
+    "content_type": 11,
+    "codename": "change_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete site",
+    "content_type": 11,
+    "codename": "delete_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view site",
+    "content_type": 11,
+    "codename": "view_site"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$bM8Zvm4h4skZ3HrT7gjr22$Yqz7ciB4rN6tGasy/17bWW+AUlAjuxt5/bp5Ee5Pu4g=",
+    "last_login": "2023-08-28T09:30:18.912Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@admin.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-08-28T09:29:47.173Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "blog",
+    "model": "post"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "blog",
+    "model": "comment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "taggit",
+    "model": "tag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "taggit",
+    "model": "taggeditem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "sites",
+    "model": "site"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "25tatwp2dlrxmu5mh0upig627zwajeu9",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pB2gAFcuvcMZNoBqRpISrsy3l1JutDtf--_lwi0bznsLa5hYXEWozj9bhPNj1g64DuVW5VzLdu6TLIr8qBNXivH5-Vw_wKZWu5ZJK-SN9oTm0EBAhCqgW1SbI1GQELnoh2t05qMipPHBN-PNcYp8OL9Aa9nNkE:1qaYZe:_U3YgL2LQYn3hFYUqKNK-hbz-IKUlLqc3LGK_OL1HAA",
+    "expire_date": "2023-09-11T09:30:18.920Z"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 1,
+  "fields": {
+    "title": "Quantum Computing in Finance",
+    "slug": "quantum-computing-in-finance",
+    "author": 1,
+    "body": "Quantum computing has the potential to revolutionize various industries, including finance. It offers the promise of solving complex problems much faster than classical computers by leveraging the principles of quantum mechanics. In the context of finance, quantum computing could impact several areas:\r\n\r\nPortfolio Optimization: Quantum computers could optimize portfolios by efficiently solving complex mathematical problems involved in minimizing risk and maximizing returns for a given set of assets. This could lead to more accurate and sophisticated investment strategies.\r\n\r\nOption Pricing and Risk Management: Quantum computers might simulate and analyze multiple scenarios for option pricing and risk management, which could lead to more accurate pricing models and better risk assessments.\r\n\r\nAlgorithmic Trading: Quantum computing's enhanced processing capabilities might improve algorithmic trading strategies by analyzing large datasets and market trends more quickly and effectively, potentially enabling traders to make better decisions.\r\n\r\nCryptography and Security: While not directly related to finance, advancements in quantum computing could also have implications for financial security. Quantum computers have the potential to break many of the encryption methods currently used in financial transactions and data protection. As a result, quantum-safe cryptographic methods are being developed to ensure secure communication in a post-quantum world.\r\n\r\nCredit Scoring and Fraud Detection: Quantum computing could improve credit scoring models by analyzing more complex and comprehensive datasets. Additionally, it could enhance fraud detection algorithms by quickly identifying patterns and anomalies in transactions.\r\n\r\nMonte Carlo Simulations: Quantum computers could speed up Monte Carlo simulations, which are widely used in finance for risk assessment, option pricing, and other computational tasks.\r\n\r\nMachine Learning and Data Analysis: Quantum machine learning algorithms could lead to more accurate predictions and insights in financial data analysis, enabling more informed decision-making.\r\n\r\nQuantitative Analysis: Quantum computing could accelerate the processing of large-scale quantitative analysis tasks, such as analyzing market trends, historical data, and complex financial models.\r\n\r\nIt's important to note that while quantum computing holds great potential, there are significant challenges to overcome. Quantum computers are still in their early stages of development, and building and maintaining them is complex and expensive. Additionally, quantum computers are highly sensitive to noise and errors due to quantum decoherence, which makes error correction a major hurdle.\r\n\r\nAs of my last knowledge update in September 2021, practical quantum computing applications in finance were still largely experimental and theoretical. Since then, there might have been developments in this field that I am not aware of. It's recommended to consult up-to-date sources or experts in quantum computing and finance for the latest information.",
+    "publish": "2023-08-28T09:48:55Z",
+    "created": "2023-08-28T09:50:14.089Z",
+    "updated": "2023-08-28T10:59:36.260Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 2,
+  "fields": {
+    "title": "New title",
+    "slug": "another-post",
+    "author": 1,
+    "body": "Post body.",
+    "publish": "2023-08-28T10:21:24.588Z",
+    "created": "2023-08-28T10:21:31.050Z",
+    "updated": "2023-08-28T10:23:45.313Z",
+    "status": "DF"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 3,
+  "fields": {
+    "title": "The Rust Programming Language",
+    "slug": "the-rust-programming-language",
+    "author": 1,
+    "body": "Installation\r\nThe first step is to install Rust. We’ll download Rust through rustup, a command line tool for managing Rust versions and associated tools. You’ll need an internet connection for the download.\r\n\r\nNote: If you prefer not to use rustup for some reason, please see the Other Rust Installation Methods page for more options.\r\n\r\nThe following steps install the latest stable version of the Rust compiler. Rust’s stability guarantees ensure that all the examples in the book that compile will continue to compile with newer Rust versions. The output might differ slightly between versions because Rust often improves error messages and warnings. In other words, any newer, stable version of Rust you install using these steps should work as expected with the content of this book.\r\n\r\nCommand Line Notation\r\nIn this chapter and throughout the book, we’ll show some commands used in the terminal. Lines that you should enter in a terminal all start with $. You don’t need to type the $ character; it’s the command line prompt shown to indicate the start of each command. Lines that don’t start with $ typically show the output of the previous command. Additionally, PowerShell-specific examples will use > rather than $.\r\n\r\nInstalling rustup on Linux or macOS\r\nIf you’re using Linux or macOS, open a terminal and enter the following command:\r\n\r\n$ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh\r\nThe command downloads a script and starts the installation of the rustup tool, which installs the latest stable version of Rust. You might be prompted for your password. If the install is successful, the following line will appear:\r\n\r\n\r\nRust is installed now. Great!",
+    "publish": "2023-08-28T14:27:18Z",
+    "created": "2023-08-28T14:27:53.594Z",
+    "updated": "2023-08-29T13:14:27.157Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 4,
+  "fields": {
+    "title": "Installing rustup on Windows",
+    "slug": "installing-rustup-on-windows",
+    "author": 1,
+    "body": "On Windows, go to https://www.rust-lang.org/tools/install and follow the instructions for installing Rust. At some point in the installation, you’ll receive a message explaining that you’ll also need the MSVC build tools for Visual Studio 2013 or later.\r\n\r\nTo acquire the build tools, you’ll need to install Visual Studio 2022. When asked which workloads to install, include:\r\n\r\n“Desktop Development with C++”\r\nThe Windows 10 or 11 SDK\r\nThe English language pack component, along with any other language pack of your choosing\r\nThe rest of this book uses commands that work in both cmd.exe and PowerShell. If there are specific differences, we’ll explain which to use.\r\n\r\nTroubleshooting\r\nTo check whether you have Rust installed correctly, open a shell and enter this line:\r\n\r\n$ rustc --version\r\nYou should see the version number, commit hash, and commit date for the latest stable version that has been released, in the following format:\r\n\r\nrustc x.y.z (abcabcabc yyyy-mm-dd)\r\nIf you see this information, you have installed Rust successfully! If you don’t see this information, check that Rust is in your %PATH% system variable as follows.\r\n\r\nIn Windows CMD, use:\r\n\r\n> echo %PATH%\r\nIn PowerShell, use:\r\n\r\n> echo $env:Path\r\nIn Linux and macOS, use:\r\n\r\n$ echo $PATH\r\nIf that’s all correct and Rust still isn’t working, there are a number of places you can get help. Find out how to get in touch with other Rustaceans (a silly nickname we call ourselves) on the community page.",
+    "publish": "2023-08-28T14:27:59Z",
+    "created": "2023-08-28T14:28:23.359Z",
+    "updated": "2023-08-29T16:33:21.119Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 5,
+  "fields": {
+    "title": "Updating and Uninstalling",
+    "slug": "updating-and-uninstalling",
+    "author": 1,
+    "body": "Once Rust is installed via rustup, updating to a newly released version is easy. From your shell, run the following update script:\r\n\r\n$ rustup update\r\nTo uninstall Rust and rustup, run the following uninstall script from your shell:\r\n\r\n$ rustup self uninstall\r\nLocal Documentation\r\nThe installation of Rust also includes a local copy of the documentation so that you can read it offline. Run rustup doc to open the local documentation in your browser.\r\n\r\nAny time a type or function is provided by the standard library and you’re not sure what it does or how to use it, use the application programming interface (API) documentation to find out!",
+    "publish": "2023-08-28T14:28:27Z",
+    "created": "2023-08-28T14:28:45.400Z",
+    "updated": "2023-08-28T14:28:45.400Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 1,
+  "fields": {
+    "post": 5,
+    "name": "kozanakyel",
+    "email": "akyel707@gmail.com",
+    "body": "good article and rust is very effective languages",
+    "created": "2023-08-29T12:49:09.525Z",
+    "updated": "2023-08-29T12:49:09.525Z",
+    "active": true
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 1,
+  "fields": {
+    "name": "music",
+    "slug": "music"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 2,
+  "fields": {
+    "name": "jazz",
+    "slug": "jazz"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 3,
+  "fields": {
+    "name": "django",
+    "slug": "django"
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 1,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 2,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 4,
+  "fields": {
+    "tag": 3,
+    "content_type": 7,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 5,
+  "fields": {
+    "tag": 3,
+    "content_type": 7,
+    "object_id": 4
+  }
+},
+{
+  "model": "sites.site",
+  "pk": 1,
+  "fields": {
+    "domain": "example.com",
+    "name": "example.com"
+  }
+}
+]
