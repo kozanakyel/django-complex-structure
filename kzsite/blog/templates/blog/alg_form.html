@@ -1,0 +1,10 @@
+<form action="{% url 'blog:algorithm_view' %}" method="get">
+  {% csrf_token %}
+  <label for="input_array">Give numbers:</label>
+  <input id="input_array" type="text" name="input_array" />
+  <input type="submit" value="OK" />
+</form>
+
+{% if result %}
+  <p>Result: {{ result }}</p>
+{% endif %}

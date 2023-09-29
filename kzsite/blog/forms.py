@@ -15,3 +15,6 @@ class EmailPostForm(forms.Form):   # using no DB
 
 class SearchForm(forms.Form):
     query = forms.CharField()
+    
+class AlgoritmicForm(forms.Form):
+    input_array = forms.CharField()

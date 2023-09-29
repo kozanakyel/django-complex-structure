@@ -8,6 +8,7 @@ urlpatterns = [
     # post views
     # path("", views.post_list, name="post_list"),
     path("", views.post_list, name="post_list"),
+    path("algorithms/", views.algorithm_view, name="algorithm_view"),
     # path("", views.PostListView.as_view(), name="post_list"),
     path("tag/<slug:tag_slug>/", views.post_list, name="post_list_by_tag"),
     path(

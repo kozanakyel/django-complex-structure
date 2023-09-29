@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 
-from .forms import EmailPostForm, CommentForm, SearchForm
+from .forms import EmailPostForm, CommentForm, SearchForm, AlgoritmicForm
 from .models import Post, Comment
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import ListView
@@ -151,3 +151,24 @@ def post_search(request):
         "blog/post/search.html",
         {"form": form, "query": query, "results": results},
     )
+    
+def algorithm_view(request):
+    
+    if request.method == 'GET':
+        form = AlgoritmicForm(data=request.GET)
+        if form.is_valid():
+            input_array = form.cleaned_data['input_array']
+            print('input: ', input_array)
+            numbers = [int(num) for num in input_array.split('+')]
+            result = [num * 2 for num in numbers] 
+            print('res: ', result)
+        else:
+            result=None
+    else:
+        form = AlgoritmicForm()
+        result = None
+    # if 'input_array' in request.GET:
+    #     data = request.GET.get('input_array')
+    #     print('form::', form, 'req: ', request.GET, 'data: ', data)
+    
+    return render(request, "blog/alg_form.html", {'form':form, 'result':result})
