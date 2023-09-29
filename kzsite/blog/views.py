@@ -14,6 +14,8 @@ from django.contrib.postgres.search import SearchVector
 from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank
 from django.contrib.postgres.search import TrigramSimilarity
 
+from .algorithms.max_sub_arr import FindMaxSubArrService
+
 
 class PostListView(ListView):
     queryset = Post.published.all()
@@ -137,7 +139,7 @@ def post_search(request):
                 .filter(rank__gte=0.3)
                 .order_by("-rank")
             )
-            
+
             # Example pg_trgm similarity for search from postgresal EXTENSION
             # results = (
             #     Post.published.annotate(
@@ -151,24 +153,18 @@ def post_search(request):
         "blog/post/search.html",
         {"form": form, "query": query, "results": results},
     )
-    
+
+
 def algorithm_view(request):
-    
-    if request.method == 'GET':
+    result = None
+    if request.method == "GET":
         form = AlgoritmicForm(data=request.GET)
         if form.is_valid():
-            input_array = form.cleaned_data['input_array']
-            print('input: ', input_array)
-            numbers = [int(num) for num in input_array.split('+')]
-            result = [num * 2 for num in numbers] 
-            print('res: ', result)
-        else:
-            result=None
-    else:
-        form = AlgoritmicForm()
-        result = None
-    # if 'input_array' in request.GET:
-    #     data = request.GET.get('input_array')
-    #     print('form::', form, 'req: ', request.GET, 'data: ', data)
-    
-    return render(request, "blog/alg_form.html", {'form':form, 'result':result})
+            input_array = form.cleaned_data["input_array"]
+            try:
+                numbers = [int(num) for num in input_array.split(",")]
+                result = FindMaxSubArrService.find_maximum_subarray(numbers, 0, len(numbers))
+            except ValueError:
+                result = "The array not installed correctly!"
+
+    return render(request, "blog/alg_form.html", {"result": result})

@@ -1,10 +1,32 @@
-<form action="{% url 'blog:algorithm_view' %}" method="get">
-  {% csrf_token %}
-  <label for="input_array">Give numbers:</label>
-  <input id="input_array" type="text" name="input_array" />
-  <input type="submit" value="OK" />
-</form>
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      {% block title %}
 
-{% if result %}
-  <p>Result: {{ result }}</p>
-{% endif %}
+      {% endblock %}
+    </title>
+    <link href="{% static 'css/blog.css' %}" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="content">
+      <div>
+        <p style="color:darkmagenta; font-weight: bold;">Algoritgms Study content</p>
+      </div>
+      
+      <form action="{% url 'blog:algorithm_view' %}" method="get">
+        {% csrf_token %}
+        <label for="input_array">Give array for maximumsub "12,13,34...":</label>
+        <input id="input_array" type="text" name="input_array" />
+        <input type="submit" value="OK" />
+      </form>
+
+      {% if result %}
+        <div id="content">
+          <p>Result: {{ result }}</p>
+        </div>
+      {% endif %}
+    </div>
+  </body>
+</html>
