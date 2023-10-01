@@ -64,7 +64,6 @@ class BinarySearchTree:
 
     def delete(self, key: Any) -> None:
         if self.root and (deleting_node := self.search(key=key)):
-
             # Case 1: no child or Case 2a: only one right child
             if deleting_node.left is None:
                 self._transplant(
@@ -93,14 +92,17 @@ class BinarySearchTree:
                 )
                 replacing_node.left = deleting_node.left
                 replacing_node.left.parent = replacing_node
-                
+
     @staticmethod
     def get_height(node: Node) -> int:
         if node.left and node.right:
-            return max(
-                BinarySearchTree.get_height(node=node.left),
-                BinarySearchTree.get_height(node=node.right),
-            ) + 1
+            return (
+                max(
+                    BinarySearchTree.get_height(node=node.left),
+                    BinarySearchTree.get_height(node=node.right),
+                )
+                + 1
+            )
 
         if node.left:
             return BinarySearchTree.get_height(node=node.left) + 1
@@ -117,7 +119,7 @@ class BinarySearchTree:
         while current_node.left:
             current_node = current_node.left
         return current_node
-    
+
     @staticmethod
     def get_rightmost(node: Node) -> Node:
         current_node = node
@@ -135,7 +137,7 @@ class BinarySearchTree:
             node = parent
             parent = parent.parent
         return parent
-    
+
     @staticmethod
     def get_successor(node: Node) -> Optional[Node]:
         if node.right:  # Case 1: right child is not empty
@@ -146,7 +148,7 @@ class BinarySearchTree:
             node = parent
             parent = parent.parent
         return parent
-    
+
     def __repr__(self) -> str:
         if self.root:
             return (
@@ -154,8 +156,8 @@ class BinarySearchTree:
                 f"tree_height={str(self.get_height(self.root))}"
             )
         return "empty tree"
- 
- 
+
+
 class Map:
     """Key-value Map implemented by the Binary Search Tree."""
 
@@ -179,8 +181,11 @@ class Map:
         """Return `True` if the map is empty; `False` otherwise."""
         return self._bst.empty
 
-if __name__ == "__main__":
+    def __repr__(self) -> str:
+        return self._bst.__repr__()
 
+
+if __name__ == "__main__":
     # Initialize the Map instance.
     contacts = Map()
 
@@ -196,4 +201,4 @@ if __name__ == "__main__":
     del contacts["John"]
 
     # Check the deleted item.
-    print(contacts["John"])    
+    print(contacts)

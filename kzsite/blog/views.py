@@ -15,6 +15,7 @@ from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank
 from django.contrib.postgres.search import TrigramSimilarity
 
 from .algorithms.max_sub_arr import FindMaxSubArrService
+from .algorithms.binary_search_tree import Map
 
 
 class PostListView(ListView):
@@ -157,6 +158,8 @@ def post_search(request):
 
 def algorithm_view(request):
     result = None
+    numbers_map = Map()
+    
     if request.method == "GET":
         form = AlgoritmicForm(data=request.GET)
         if form.is_valid():
@@ -164,7 +167,10 @@ def algorithm_view(request):
             try:
                 numbers = [int(num) for num in input_array.split(",")]
                 result = FindMaxSubArrService.find_maximum_subarray(numbers, 0, len(numbers))
+                
+                for i in numbers:
+                    numbers_map[i] = str(i**2)
             except ValueError:
                 result = "The array not installed correctly!"
 
-    return render(request, "blog/alg_form.html", {"result": result})
+    return render(request, "blog/alg_form.html", {"result": numbers_map})
