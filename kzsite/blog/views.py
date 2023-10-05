@@ -173,4 +173,4 @@ def algorithm_view(request):
             except ValueError:
                 result = "The array not installed correctly!"
 
-    return render(request, "blog/alg_form.html", {"result": numbers_map})
+    return render(request, "blog/alg_form.html", {"result": {numbers_map : result}})
