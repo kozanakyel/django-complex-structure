@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from django.shortcuts import get_object_or_404
 
+from api.authentication import TokenAuthentication
 
 from .models import Product
 from .permission import IsStaffEditorPermission
@@ -13,7 +14,12 @@ from .serializers import ProductSerializer
 class ProductListCreateAPIView(generics.ListCreateAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
-    authentication_classes = [authentication.SessionAuthentication]
+    
+    # auth and permission goes to settings....
+    # authentication_classes = [
+    #     authentication.SessionAuthentication,
+    #     TokenAuthentication,
+    # ]
     permission_classes = [permissions.IsAdminUser, IsStaffEditorPermission]
 
     def perform_create(self, serializer):
@@ -27,7 +33,6 @@ class ProductListCreateAPIView(generics.ListCreateAPIView):
         # send a Django signal
 
 
-
 product_list_create_view = ProductListCreateAPIView.as_view()
 
 
@@ -35,6 +40,7 @@ class ProductDetailAPIView(generics.RetrieveAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
     # lookup_field = 'pk'
+    permission_classes = [permissions.IsAdminUser, IsStaffEditorPermission]
 
 
 product_detail_view = ProductDetailAPIView.as_view()
@@ -45,6 +51,7 @@ class ProductUpdateAPIView(generics.UpdateAPIView):
     serializer_class = ProductSerializer
     permission_classes = [permissions.DjangoModelPermissions]
     lookup_field = "pk"
+    permission_classes = [permissions.IsAdminUser, IsStaffEditorPermission]
 
     def perform_update(self, serializer):
         instance = serializer.save()
@@ -60,6 +67,7 @@ class ProductDestroyAPIView(generics.DestroyAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
     lookup_field = "pk"
+    permission_classes = [permissions.IsAdminUser, IsStaffEditorPermission]
 
     def perform_destroy(self, instance):
         # instance
@@ -77,8 +85,9 @@ product_destroy_view = ProductDestroyAPIView.as_view()
 
 # product_list_view = ProductListAPIView.as_view()
 
-class CreateAPIView(mixins.CreateModelMixin, generics.GenericAPIView):
-    pass
+
+# class CreateAPIView(mixins.CreateModelMixin, generics.GenericAPIView):
+#     pass
 
 
 class ProductMixinView(
